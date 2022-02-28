@@ -2,6 +2,9 @@
   "name": "johnny-five.io",
   "version": "0.0.1",
   "description": "The Johnny-Five Website",
+  "engines": {
+    "node": "16.x"
+  },
   "main": "index.js",
   "scripts": {
     "dev": "live-server --open=public",
