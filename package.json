@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "live-server --open=public",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm install && grunt bootstrap && grunt regen && grunt"
+    "build": "npm install && npm install grunt-cli -g && grunt bootstrap && grunt regen && grunt"
   },
   "repository": {
     "type": "git",
