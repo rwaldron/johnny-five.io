@@ -1,6 +1,5 @@
 require("copy-paste");
 const cp = require("child_process");
-// const inspect = require("util").inspect;
 const fs = require("fs");
 const request = require("request");
 const moment = require("moment");
@@ -320,7 +319,6 @@ module.exports = function(grunt) {
   });
 
   // Load the plugin that provides the "uglify" task.
-  // grunt.loadNpmTasks("grunt-contrib-sass");
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-contrib-connect");
   grunt.loadNpmTasks("grunt-git");
@@ -333,7 +331,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-uglify-es");
 
   // Default task(s).
-  // grunt.registerTask("default", ["uglify"]);
   grunt.registerTask("bootstrap", ["clean:deps", "gitclone", "copy"]);
   grunt.registerTask("dev", ["load-programs", "connect", "launch", "watch"]);
   grunt.registerTask("regen", ["load-programs", "copy", "uglify", "index", "articles-from-rss", "examples-list", "examples", "api-docs", "platform-support", "news"]);
