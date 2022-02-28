@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Johnny-Five: The JavaScript Robotics &amp; IoT Platform</title>
+  <meta property="og:title" content="Johnny-Five: The JavaScript Robotics &amp; IoT Platform">
+  <meta property="og:url" content="http://johnny-five.io/">
+  <%= header %>
+  <link rel="stylesheet" href="/css/magic.css">
+</head>
+<body>
+
+  <div class="mast">
+
+    <style>
+    /* BLM Solidarity Statement Styles */
+    .blm-solidarity-statement h1 {
+      color: white;
+      font-family: 'Roboto', sans-serif;
+    }
+    .blm-solidarity-statement p {
+      color: #ddd;
+      font-family: 'Roboto', serif;
+    }
+    @media (min-width: 62em) {
+      #masthead.blm-solidarity-statement {
+        padding: 3em;
+      }
+    }
+    @media (min-width: 75em) {
+      #masthead.blm-solidarity-statement {
+        padding: 5em;
+      }
+    }
+    </style>
+    <!--
+      <div id="masthead" class="blm-solidarity-statement">
+        <h1>We stand in solidarity with Black Lives Matter.</h1>
+        <p>We mourn George Floyd, Natosha McDade, Yassin Mohamed, Finan H. Berhe, Sean Reed, Steven Demarco Taylor, Breonna Taylor, Ariane McCree, Terrance Franklin, Miles Hall, Darius Tarver, William Green, Samuel David Mallard, Kwame Jones, De’von Bailey, Christopher Whitfield, Anthony Hill, De’Von Bailey, Eric Logan, Jamarion Robinson, Gregory Hill Jr, JaQuavion Slaton, Ryan Twyman, Brandon Webber, Jimmy Atchison, Willie McCoy, Emantic Fitzgerald Bradford J, D’ettrick Griffin, Jemel Roberson, DeAndre Ballard, Botham Shem Jean, Robert Lawrence White, Anthony Lamar Smith, Ramarley Graham, Manuel Loggins Jr, Trayvon Martin, Wendell Allen, Kendrec McDade, Larry Jackson Jr, Jonathan Ferrell, Jordan Baker, Victor White III, Dontre Hamilton, Eric Garner, John Crawford III, Michael Brown, Ezell Ford, Dante Parker, Kajieme Powell, Laquan McDonald, Akai Gurley, Tamir Rice, Rumain Brisbon, Jerame Reid, Charly Keunang, Tony Robinson, Walter Scott, Freddie Gray, Brendon Glenn, Samuel DuBose, Christian Taylor, Jamar Clark, Mario Woods, Quintonio LeGrier, Gregory Gunn, Akiel Denkins, Alton Sterling, Philando Castile, Terrence Sterling, Terence Crutcher, Keith Lamont Scott, Alfred Olango, Jordan Edwards, Stephon Clark, Danny Ray Thomas, DeJuan Guillory, Patrick Harmon, Jonathan Hart, Maurice Granton, Julius Johnson, Jamee Johnson, Michael Dean, and so many others.</p>
+        <p>We commit to honoring our pledge to <a href="https://www.blacktechforblacklives.com/">Black Tech for Black Lives</a>, and encourage our partners to join us in pledging.</p>
+        <p>Please consider donating to <a href="https://blacklivesmatter.com/">Black Lives Matter</a>, <a href="https://eji.org/">The Equal Justice Initiative</a>, <a href="https://policingequity.org/">The Center for Policing Equity</a>, <a href="https://ellabakercenter.org/">Ella Baker Center for Human Rights</a>, <a href="https://www.gofundme.com/f/georgefloyd">George Floyd Memorial Fund</a>, and <a href="https://www.gofundme.com/f/9v4q2-justice-for-breonna-taylor">Justice for Breonna Taylor</a>.</p>
+      </div>
+    -->
+
+    <nav class="nav-primary wrapper icon-j5">
+      <%= navigation %>
+    </nav>
+    <header role="banner" class="banner banner-home">
+      <h1 class="site-hed"><span>Johnny-Five</span></h1>
+      <p role="marquee" aria-live="polite" class="site-subhed">The JavaScript<br/><span class="js-board-type">Arduino</span> Robotics &amp; IoT Platform</p>
+
+      <p role="marquee" aria-live="polite" class="site-subhed" id="visit-mike">Artwork by<br/>
+      Mike Sgier<br> <a href="http://msgierillustration.com/">msgierillustration.com</a></p>
+
+      <p role="marquee" aria-live="polite" class="site-subhed" id="visit-mike">Visit Mike!</p>
+      <!-- TODO: ARIA role/live region should be applied by script -->
+
+      <span id="j5-artwork">
+        <img class="j5" srcset="img/heres-johnny.png" alt="Artwork by Mike Sgier, http://msgierillustration.com/">
+        <img class="j5" srcset="img/trick-or-treat.png" style="opacity: 0">
+      </span>
+      </header>
+
+  </div>
+
+  <main class="central">
+
+    <div class="wrap-a johnny-five-is">
+      <div class="teaser">
+        <b>Johnny-Five</b> is the <a href="http://www.amazon.com/Make-JavaScript-Robotics-Raspberry-BeagleBone/dp/1457186950">JavaScript Robotics &amp; IoT</a> Platform. Originally created by Rick Waldron in 2012, Johnny-Five is maintained by a community of passionate software developers and hardware engineers. Over 75 developers have made contributions towards building a robust, extensible and composable ecosystem.
+        <div class="social-buttons-galore fade-in">
+          <a class="github-button" href="https://github.com/rwaldron/johnny-five" data-icon="octicon-star" data-style="mega" data-count-href="/rwaldron/johnny-five/stargazers" data-count-api="/repos/rwaldron/johnny-five#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star rwaldron/johnny-five on GitHub">Star</a>
+          <a class="github-button" href="https://github.com/rwaldron/johnny-five/fork" data-icon="octicon-git-branch" data-style="mega" data-count-href="/rwaldron/johnny-five/network" data-count-api="/repos/rwaldron/johnny-five#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork rwaldron/johnny-five on GitHub">Fork</a>
+          <a href="https://twitter.com/nodebots" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @nodebots</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?"http":"https";if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document, "script", "twitter-wjs");
+          </script>
+          <a href="https://twitter.com/share" class="twitter-share-button"{count} data-size="large" data-hashtags="javascript,robotics" data-related="nodebots">Tweet</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?"http":"https";if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document, "script", "twitter-wjs");
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <div id="j5ik-campaign" class="banner-campaign">
+      <div class="teaser">
+        <h2>The <a href="https://www.sparkfun.com/j5ik?utm_source=j5io&amp;utm_medium=banner&amp;utm_campaign=j5ik">Johnny-Five Inventor's Kit</a>:</h2>
+        <p class="tagline">The only kit designed for getting started with Johnny-Five!</p class="tagline">
+        <a href="https://www.sparkfun.com/j5ik?utm_source=j5io&amp;utm_medium=banner&amp;utm_campaign=j5ik">
+        <picture>
+          <source media="(min-width: 40em)"
+            srcset="img/j5-campaign-big-x2.gif 1x, img/j5-campaign-big-x2.gif 2x">
+          <source media="(min-width: 20em)"
+            srcset="img/j5-campaign-medium-x2.gif 1x, img/j5-campaign-medium-x2.gif 2x">
+          <source
+            srcset="img/j5-campaign-small.gif 1x, img/j5-campaign-small-2x.gif 2x">
+          <img src="img/j5-campaign.gif" alt="">
+          </picture>
+        </a>
+        <p>The Johnny-Five Inventor's Kit, from SparkFun, is now available! It's designed for anyone who wants to get started with JavaScript-powered robotics. The J5IK includes a <a href="https://tessel.io/?utm_source=j5io&amp;utm_medium=banner&amp;utm_campaign=j5ik">Tessel 2</a>, and everything else you need to do 14 experiments! No programming or soldering experience is required.</p>
+        <a href="https://www.sparkfun.com/j5ik?utm_source=j5io&amp;utm_medium=banner&amp;utm_campaign=j5ik" class="button">I want one!</a>
+      </div>
+    </div>
+
+    <div class="wrap-b hello">
+      <img id="hello-scene-large" src="img/led-scene-0.gif" class="thumb hello-scene" alt="">
+      <div class="teaser">
+        <h2 class="sec-hed">Hello World!</h2>
+        <p>Microcontrollers and <abbr title="System on a Chip">SoC</abbr> platforms like to say "Hello World" with a simple blinking LED; the following demonstrates how to do this with the Johnny-Five framework.</p>
+
+        <ol>
+          <li>Install <a href="https://nodejs.org/download/">Node.js (Prefer LTS!)</a>.</li>
+          <li><a href="/platform-support/">Setup your board.</a></li>
+          <li>Get Johnny-Five: <code id="npm-install" class="language-bash">npm install johnny-five</code> *</li>
+          <li>Run your program! <code class="language-bash">node blink.js</code></li>
+        </ol>
+
+        <a href="#arduino" data-hello="arduino">Arduino</a> |
+        <a href="#tessel" data-hello="tessel">Tessel 2</a> |
+        <a href="#raspberrypi" data-hello="raspberrypi">Raspberry Pi</a> |
+        <a href="#edison" data-hello="edison">Intel Edison</a> |
+        <a href="#spark" data-hello="particle">Particle Photon</a> |
+        <a href="/platform-support/">See All...</a>
+      <pre><code class="language-javascript">var five = require(&quot;johnny-five&quot;);
+var board = new five.Board();
+
+board.on(&quot;ready&quot;, function() {
+  var led = new five.Led(13);
+  led.blink(500);
+});
+</code></pre>
+
+
+
+        <img id="hello-scene-small" src="img/led-scene-0.gif" class="thumb hello-scene" alt="">
+
+        <a href="/examples/">Browse more examples</a>
+
+        <p>* There are likely to be other steps involved in preparing your target platform, the best place to start is by looking at <a href="/platform-support/">Platform Support.</a></p>
+
+      </div>
+    </div>
+
+    <div class="wrap-b support">
+      <picture>
+        <source srcset="img/bot-sq.jpg" media="(min-width: 45em)">
+        <img src="img/bot.jpg" class="thumb" alt="<--TODO: I don’t know what this thing is.-->">
+      </picture>
+      <div class="teaser">
+        <h2 class="sec-hed">Platform Support</h2>
+        <p>Johnny-Five has been tested with a variety of <a href="/platform-support/">Arduino-compatible Boards</a>. For non-Arduino based projects, platform-specific IO Plugins are available. <a href="https://github.com/rwaldron/io-plugins">IO Plugins</a> allow Johnny-Five code to communicate with any hardware in whatever language that platform speaks!</p>
+
+        <div class="platform-icons">
+          <%= platforms %>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="wrap-a thumb-post the-book">
+      <div class="sec-hed">
+        <h2><a href="https://www.manning.com/books/javascript-on-things">JavaScript on Things: Hardware for Web Developers</a></h2>
+      </div>
+      <a href="https://www.manning.com/books/javascript-on-things"><img src="img/jsot-book.jpg" alt="Cover of 'JavaScript on Things: Hardware for Web Developers'" class="thumb"></a>
+      <p>JavaScript can be used to control hordes of small robots, creative maker projects, and IoT devices. With the Node.js ecosystem at hand, hardware prototyping gets fun, intuitive and fast.</p>
+      <p>JavaScript on Things is the first step into the exciting world of programming for small electronics. This fully-illustrated, hands-on book teaches readers how to get going with platforms like Arduino, Tessel 2, and Raspberry Pi.
+      <br/><br/>
+      Use the Manning discount code <b>gardnerb</b> for 37% off!</p>
+      <p>Project author: <a href="http://twitter.com/lyzadanger">Lyza Danger Gardner</a></p>
+    </div>
+
+    <div class="wrap-a thumb-post the-book">
+      <div class="sec-hed">
+        <h2><a href="http://www.amazon.com/Make-JavaScript-Robotics-Raspberry-BeagleBone/dp/1457186950">Make: JavaScript Robotics</a></h2>
+      </div>
+      <a href="http://www.amazon.com/Make-JavaScript-Robotics-Raspberry-BeagleBone/dp/1457186950"><img src="img/make-book.jpg" alt="Cover of 'Make: JavaScript Robotics'" class="thumb"></a>
+      <p>JavaScript Robotics is on the rise. Rick Waldron, the creator of the Johnny-Five platform and lead author of <i>Make: JavaScript Robotics</i>, is at the forefront of this movement. This book brings together fifteen innovative programmers, each creating a unique Johnny-Five robot step-by-step, and offering tips and tricks along the way. Experience with JavaScript is a prerequisite.</p>
+      <p>Project authors: <a href="http://twitter.com/resseguie">David Resseguie</a>, <a href="http://twitter.com/rockbot">Raquel Velez</a>, <a href="http://twitter.com/annagerber">Anna Gerber</a>, <a href="http://twitter.com/lyzadanger">Lyza Danger Gardner</a>, <a href="http://twitter.com/nodebotanist">Kassandra Perch</a>, <a href="http://twitter.com/noopkat">Susan Hinton</a>, <a href="http://twitter.com/ajfisher">Andrew Fisher</a>, <a href="http://twitter.com/opheliasdaisies">Sara Gorecki</a>, <a href="http://twitter.com/julian_duque">Julian David Duque</a>, <a href="http://twitter.com/beriberikix">Jonathan Beri</a>, <a href="http://twitter.com/dtex">Donovan Buck</a>, <a href="http://twitter.com/nexxylove">Emily Rose</a>, <a href="http://twitter.com/nebrius">Bryan Hughes</a>, <a href="http://twitter.com/makenai">Pawel Szymczykowski</a> </p>
+    </div>
+
+    <div class="wrap-a thumb-post the-book">
+      <div class="sec-hed">
+        <h2><a href="http://www.amazon.com/Learning-JavaScript-Robotics-Kassandra-Perch/dp/1785883348">Learning JavaScript Robotics</a></h2>
+      </div>
+      <a href="http://www.amazon.com/Learning-JavaScript-Robotics-Kassandra-Perch/dp/1785883348"><img src="img/packt-book.jpg" alt="Cover of 'Learning JavaScript Robotics'" class="thumb"></a>
+      <p>Design, build, and program your own remarkable robots with JavaScript and open source hardware!
+      <br>
+      There has been a rapid rise in the use of JavaScript in recent times in a variety of applications, and JavaScript robotics has seen a rise in popularity too. Johnny-Five is a framework that gives NodeBots a consistent API and platform across several hardware systems.
+      <br>
+      This book walks you through basic robotics projects including the physical hardware builds and the JavaScript code for them. You'll delve into the concepts of Johnny-Five and JS robotics.</p>
+
+      <p>Project author: <a href="http://twitter.com/nodebotanist">Kassandra Perch</a></p>
+    </div>
+
+<!--
+    <div class="wrap-c usedby">
+      <h2 class="sec-hed">Johnny-Five and NodeBots in the wild!</h3>
+      <script src="//redditjs.com/subreddit.js" data-subreddit="nodebots"></script>
+    </div>
+
+ -->
+  </main>
+
+
+  <a href="https://github.com/rwaldron/johnny-five">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" class="fork-me">
+  </a>
+
+  <%= footer %>
+</body>
+</html>

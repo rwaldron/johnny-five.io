@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Johnny-Five.io: <%= title %></title>
+  <meta property="og:title" content="Johnny-Five.io: <%= title %>">
+  <meta property="og:url" content="http://johnny-five.io/news/<%= url %>">
+  <%= header %>
+</head>
+<body>
+
+  <div class="mast">
+    <nav class="nav-primary wrapper icon-j5">
+      <%= navigation %>
+    </nav>
+
+    <header role="banner" class="banner">
+     <h1 class="site-hed"><span><%= title %></span></h1>
+    </header>
+  </div>
+
+  <main class="central docs">
+    <div class="wrap-a wrap-docs list-docs">
+      <nav id="api-nav" class="docs-nav api-nav-list api-content-view">
+        <%= list %>
+      </nav>
+
+      <div class="docs-content api-content-view">
+        <%= contents %>
+      </div>
+    </div>
+  </main>
+
+  <%= footer %>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript Robotics: <%= title %> API (Johnny-Five)</title>
+  <meta property="og:title" content="JavaScript Robotics: <%= title %> API (Johnny-Five)">
+  <meta property="og:url" content="http://johnny-five.io/api/<%= url %>">
+  <%= header %>
+</head>
+<body>
+
+  <div class="mast">
+    <nav class="nav-primary wrapper icon-j5">
+      <%= navigation %>
+    </nav>
+
+    <header role="banner" class="banner">
+     <h1 class="site-hed"><span><%= title %></span></h1>
+    </header>
+  </div>
+
+  <main class="central docs">
+    <div class="wrap-a wrap-docs list-docs">
+      <nav id="api-nav" class="docs-nav api-nav-list api-content-view">
+        <h3>Component Classes</h3>
+        <%= list %>
+      </nav>
+
+      <div class="docs-content api-content-view">
+        <ul class="api-anchors">
+          <li><a href="#parameters">Parameters</a></li>
+          <li><a href="#shape">Shape</a></li>
+          <li><a href="#component-initialization">Component Initialization</a>
+          <li><a href="#usage">Usage</a></li>
+          <li><a href="#api">API</a></li>
+          <li><a href="#events">Events</a></li>
+        </ul>
+
+        <%= contents %>
+
+
+        <%= examples %>
+      </div>
+    </div>
+  </main>
+
+  <%= footer %>
+
+</body>
+</html>
