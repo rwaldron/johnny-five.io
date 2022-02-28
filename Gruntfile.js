@@ -362,7 +362,7 @@ module.exports = function(grunt) {
     };
 
     const plugins = JSON.parse(file.read("src/platforms-plugins.json"));
-    const platforms = plugins.platforms.reduce((accum, {variants}) => accum.concat(variants.filter(({enabled}) => enabled).map(({name, image}) => `[![${name}](http://static.johnny-five.io/img/platforms/small/${image})](/platform-support/#${slug(name)})`)), []).join("\n");
+    const platforms = plugins.platforms.reduce((accum, {variants}) => accum.concat(variants.filter(({enabled}) => enabled).map(({name, image}) => `[![${name}](/img/platforms/small/${image})](/platform-support/#${slug(name)})`)), []).join("\n");
 
     file.write("public/index.html", templates.index({
       navigation,
@@ -451,7 +451,7 @@ module.exports = function(grunt) {
       const relevant = value.split(": ")[0].trim();
       return relevant;
     }).filter(name => !apiignorelist.includes(name));
-    const ogImagePath = "http://johnny-five.io/img/images/";
+    const ogImagePath = "/img/images/";
 
     const entries = JSON.parse(file.read(file.expand(this.data)));
     entries.forEach(entry => {
@@ -698,7 +698,7 @@ module.exports = function(grunt) {
       });
     });
 
-    const platforms = plugins.platforms.reduce((accum, {variants}) => accum.concat(variants.filter(({enabled}) => enabled).map(({name, image}) => `[![${name}](http://static.johnny-five.io/img/platforms/small/${image})](/platform-support/#${slug(name)})`)), []).join("\n");
+    const platforms = plugins.platforms.reduce((accum, {variants}) => accum.concat(variants.filter(({enabled}) => enabled).map(({name, image}) => `[![${name}](/img/platforms/small/${image})](/platform-support/#${slug(name)})`)), []).join("\n");
 
     file.mkdir("public/platform-support/");
     file.write("public/platform-support/index.html", templates.platformSupport({
