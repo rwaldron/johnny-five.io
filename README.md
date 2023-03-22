@@ -100,13 +100,3 @@ grunt && grunt dev
 ## Continuous Deployment
 
 Pushing or merging to `main` will deploy the current state of the website.
-
-## Manual Deployment
-
-### Deploying to staging
-
-Pushing or merging to `staging` will deploy the current state of that branch to [](https://johnny-five-staging.herokuapp.com/)
-
-### Deploying to production
-
-Pushing or merging to `main` will deploy the current state of that branch to [](https://johnny-five-production.herokuapp.com/)
